@@ -1,1 +1,5 @@
-<h6>Hello Footer</h6>
+<footer>
+    
+    <a href="#">All Right Reserved @ Ahmed Mostafa</a>
+    
+</footer>

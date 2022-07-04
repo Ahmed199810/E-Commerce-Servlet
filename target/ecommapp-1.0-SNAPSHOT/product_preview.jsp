@@ -13,6 +13,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Product Details</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <%@include file="components/navbar.jsp"%>

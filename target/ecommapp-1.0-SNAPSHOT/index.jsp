@@ -22,31 +22,30 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <%@include file="components/navbar.jsp"%>
-        
+
         <div class="container">
             <h1>Welcome to E-commerce</h1>
             <div>
-                
-                <%
+
+                <%                    
                     List<Category> categs = categories.getAllCategories();
-                    for(Category category : categs){
-                        %>
-                            <div>
-                                <div>
-                                    <img src="<%=category.getImg()%>" width="150">
-                                    <div>
-                                        <h5><%=category.getTitle()%></h5>
-                                        <a href="products?category=<%=category.getId()%>">Open</a>
-                                    </div>
-                                </div>
-                            </div>
-                        <%
+                    for (Category category : categs) {
+                %>
+                <div class="home-category">
+                    <img src="<%=category.getImg()%>" width="150">
+                    <div>
+                        <h5><%=category.getTitle()%></h5>
+                        <a href="products?category=<%=category.getId()%>">Open</a>
+                    </div>
+                </div>
+                <%
                     }
                 %>
-            
+
             </div>
         </div>
 

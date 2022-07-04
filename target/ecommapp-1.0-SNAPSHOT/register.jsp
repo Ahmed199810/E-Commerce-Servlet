@@ -20,6 +20,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Register</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <%@include file="components/navbar.jsp"%>
         
