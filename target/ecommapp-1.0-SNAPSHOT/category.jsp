@@ -28,26 +28,23 @@
         <%@include file="components/navbar.jsp"%>
         
         <div class="container">
-            <h1>Welcome to Categories</h1>
-            <div>
-                
-                <%
+            <h1>All Categories</h1>
+            <div class="category-container">
+
+                <%                    
                     List<Category> categs = categories.getAllCategories();
-                    for(Category category : categs){
-                        %>
-                            <div>
-                                <div>
-                                    <img src="<%=category.getImg()%>" width="150">
-                                    <div>
-                                        <h5><%=category.getTitle()%></h5>
-                                        <a href="products?category=<%=category.getId()%>">Open</a>
-                                    </div>
-                                </div>
-                            </div>
-                        <%
+                    for (Category category : categs) {
+                %>
+                <a class="home-category" href="products?category=<%=category.getId()%>">
+                    <div class="cat-item">
+                        <img src="<%=category.getImg()%>">
+                        <h5><span><%=category.getTitle()%> </span></h5>
+                    </div>
+                </a>
+                <%
                     }
                 %>
-            
+
             </div>
         </div>
 
