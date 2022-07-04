@@ -107,6 +107,33 @@ public class ProductDao {
 
     }
     
+    public List<Product> getLastProducts(){
+        
+        List<Product> list = new ArrayList<>();
+        Product product = null;
+        try {
+            String query = "select * from products order by id DESC LIMIT 3";
+            PreparedStatement ps = conn.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+            
+            while(rs.next()){
+                product = new Product();
+                product.setId(rs.getInt(1));
+                product.setTitle(rs.getString(2));
+                product.setDetails(rs.getString(3));
+                product.setImg(rs.getString(4));
+                product.setCategory_id(rs.getInt(5));
+                product.setPrice(rs.getFloat(6));
+                list.add(product);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+
+    }
+    
     
     public boolean createProduct(String title, String details, float price, int cid, String img){
     
