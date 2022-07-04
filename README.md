@@ -1,6 +1,5 @@
 # E Commerce With Java Servlet
 ## Basic E Commerce Website With Admin Dashboard
-<br>
 ## Features
 <br>
 1 - View Products By Categorys
