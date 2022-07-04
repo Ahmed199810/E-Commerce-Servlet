@@ -27,12 +27,9 @@
     </head>
     <body>
         <%@include file="components/navbar.jsp"%>
-<br>
-            <br>
         <div class="container">
             <br>
             <br>
-            
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
@@ -91,23 +88,19 @@
             <br>
             <br>
             <div>
-
                 <%
                     ProductDao proDao = new ProductDao(DBConnect.getConn());
                     List<Product> products = proDao.getLastProducts();
                     for (Product product : products) {
                         int col = 3;
                 %>
-                <div class="row">
-                    <div>
-                        <img src="<%=product.getImg()%>" width="150">
-                        <div>
-                            <h5><%=product.getTitle()%></h5>
+                    <a class="home-product" href="product_preview?product=<%=product.getId()%>">
+                        <div class="pro-item">
+                            <img src="<%=product.getImg()%>" width="150">
+                            <h5><span><%=product.getTitle()%> </span></h5>
                             <p><%=product.getPrice()%> USD</p>
-                            <a href="product_preview?product=<%=product.getId()%>">Preview</a>
                         </div>
-                    </div>
-                </div>
+                    </a>
                 <%
                     }
                 %>

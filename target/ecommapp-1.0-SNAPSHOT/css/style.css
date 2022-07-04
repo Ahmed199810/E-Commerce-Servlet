@@ -75,7 +75,7 @@ footer a {
     width: 60%;
     height: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
     text-align: center;
     flex: 1;
 }
@@ -239,4 +239,64 @@ footer a {
 
 .row{
     display: inline-block;
+}
+
+.home-product{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    height: 100px;
+}
+
+.home-product img{
+    width: 70px;
+    height: 70px;
+}
+
+.pro-item {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.pro-item span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.pro-item span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.pro-item:hover span {
+    padding-right: 25px;
+}
+
+.pro-item:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.pro-item h5{
+    padding: 0px;
+    margin: 0px;
 }
