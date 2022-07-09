@@ -39,7 +39,7 @@
         <%@include file="../components/navbar.jsp"%>
         
         <div class="container">
-            <h1>Welcome to Products</h1>
+            <h1>Products</h1>
             <div>
                 <table>
                     <tr>
@@ -49,7 +49,9 @@
                         <th>Details</th>
                         <th>Quantity</th>
                         <th>Price</th>
-                        <th>Actions</th>
+                        <th>Preview</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                     
                     <%
@@ -73,9 +75,15 @@
                             <th>
                                 <div>
                                     <a href="product_preview?product=<%=product.getId()%>">Preview</a>
-                                    <br>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
                                     <a href="edit_product?pid=<%=product.getId()%>">Edit</a>
-                                    <br>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
                                     <form method="post" action="delete_product">
                                         <input type="hidden" name="product" value="<%=product.getId()%>">
                                         <input type="submit" value="Delete">
