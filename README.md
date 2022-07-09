@@ -21,3 +21,15 @@
 9 - Admin View Users
 <br>
 10 - Users Login and Register
+
+## How to Use
+<br>
+1 - Fork The Repository
+<br>
+2 - Clone
+<br>
+3 - Install TomCat Server
+<br>
+4 - Import MySql database File from here https://github.com/Ahmed199810/E-Commerce-Servlet/tree/main/database
+<br>
+5 - Start
