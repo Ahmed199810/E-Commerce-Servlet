@@ -148,6 +148,9 @@ footer a {
     margin: 0px;
 }
 
+/*------------------------------------------SLIDER START--------------------------------------------------*/
+
+
 .slideshow-container {
     width: 100%;
     position: relative;
@@ -237,6 +240,9 @@ footer a {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/*------------------------------------------SLIDER END --------------------------------------------------*/
+
 
 .row{
     display: inline-block;
@@ -367,13 +373,7 @@ condition.search-container{
     width: 60%;
 }
 
-.container input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: 1px solid black;
-    border-radius: 3px;
-}
+
 
 .container .search-container button {
     float: inherit;
@@ -389,4 +389,46 @@ condition.search-container{
 
 .container .search-container button:hover {
     background: #ccc;
+}
+
+/* ---------------------------- LOGIN ------------------------------------------------*/
+
+.login-form{
+    margin: auto;
+    align-content: center;
+}
+
+.login-form form {
+    border: 3px solid #f1f1f1;
+    text-align: left;
+    padding: 16px;
+}
+
+.login-form input[type=email], input[type=password], input[type=phone], input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-form input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+img.avatar {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
 }

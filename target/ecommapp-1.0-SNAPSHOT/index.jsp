@@ -28,6 +28,7 @@
     <body>
         <%@include file="components/navbar.jsp"%>
         <div class="container">
+            
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
@@ -59,6 +60,7 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
+            
             <br>
             <br>
             <div class="category-container">
