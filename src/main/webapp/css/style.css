@@ -446,7 +446,7 @@ condition.search-container{
 }
 
 .login-form input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #0f5ea8;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -461,6 +461,44 @@ img.avatar {
 }
 
 .imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.dashboard a{
+    background-color: #0f5ea8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.dashboard a:hover{
+    background-color: #1278d7;
+}
+
+input[type=submit] {
+    background-color: #0f5ea8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+th a {
+    background-color: #4b8722;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
 }
